@@ -56,7 +56,8 @@
 ## 📊 Benchmark Results
 
 > 📝 **Note**: The results below are obtained by aggregating success outcomes from the original and the four refined target images.  
-> If you’re comparing under a single-interaction setting (i.e., one prompt per query), you can refer to the results in Figure 4 of our paper using only safety-icon refinement, or simply evaluate on our open-sourced attack dataset.
+<!-- > If you’re comparing under a single-interaction setting (i.e., one prompt per query), you can refer to the results in Figure 4 of our paper using only safety-icon refinement, or simply evaluate on our open-sourced attack dataset. -->
+> If you’re comparing under a single-interaction setting (i.e., one prompt per query), you can refer to the results in Figure 4 of our paper using only safety-icon refinement.
 
 ### 📋 Attack Success Rate on MMSafetyBench-tiny
 
@@ -134,7 +135,7 @@ python generate_model_response.py \
   If not set or alternative versions are missing, only the base `.json` file will be used. -->
 
 
-## 🔧 Evaluation
+<!-- ## 🔧 Evaluation
 
 We follow the evaluation protocol described in the paper.
 
@@ -142,7 +143,7 @@ To run evaluation:
 
 ```bash
 bash eval/example.sh
-```
+``` -->
 
 ## 📃 Citation
 If you find our project is helpful, please cite our paper as
