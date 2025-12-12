@@ -7,7 +7,7 @@
         <img alt="paper link" src="https://img.shields.io/badge/Paper-arXiv-red?style=flat" />
     </a>
     <a href="https://github.com/xiongyuaay/Contextual-Image-Attack">
-        <img alt="GitHub Stars" src="https://img.shields.io/github/stars/Dtc7w3PQ/Response-Attack?style=flat&logo=github" />
+        <img alt="GitHub Stars" src="https://img.shields.io/github/stars/xiongyuaay/Contextual-Image-Attack?style=flat&logo=github" />
     </a>
   </h2>
 </div>
