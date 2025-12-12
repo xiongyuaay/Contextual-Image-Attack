@@ -34,7 +34,7 @@
 
 **Contextual Image Attack (CIA)** is a novel image-centric jailbreak method designed to exploit vulnerabilities in Multimodal Large Language Models (MLLMs). Unlike traditional attacks that focus on text-based prompts or adversarial images alone, CIA embeds harmful queries within visually coherent and contextually rich image scenarios. Using a multi-agent system, CIA constructs these contextual images by parsing the harmful query, generating a fitting visual context, and refining the image to preserve semantic consistency while enhancing the attack’s effectiveness. 
 <div align="center">
-  <img src="assets/framework6.pdf" alt="Response Attack Method Illustration" width="95%" />
+  <img src="assets/framework.png" alt="Response Attack Method Illustration" width="95%" />
   <p><em>Figure: Overview of the Response Attack (RA) Method.</em></p>
 </div>
 
@@ -62,14 +62,20 @@
 
 <div align="center">
 
-| Metric        | QR-Attack | SI-Attack | VisCo Attack | CIA (Ours) |
-|:-------------:|:---------:|:---------:|:------------:|:----------:|
-| GPT-4o ASR (%) |  20.24    |  23.81    |    85.71     |  **86.31** |
-| Qwen2.5-VL-72B ASR (%) | 49.40 | 60.12 | 88.10 | **91.07** |
+| Method        | GPT-4o | GPT-4o-mini | Gemini-2.0-Flash | Qwen2.5-VL-72B | InternVL2.5-78B |
+|:-------------:|:-----:|:-----------:|:----------------:|:--------------:|:---------------:|
+| QR-Attack     | 20.24 |    19.64    |      29.17       |     49.40      |      36.31      |
+| SI-Attack     | 23.81 |    32.14    |      26.79       |     60.12      |      35.12      |
+| VisCo Attack  | 85.71 |    85.71    |      92.86       |     88.10      |      92.86      |
+| CIA (Ours)    | **86.31** | **86.90** |   **85.12**   |   **91.07**    |    **82.14**    |
 
 </div>
 
-<p align="center"><em>Table: ASR (%) on MMSafetyBench-tiny for GPT-4o and Qwen2.5-VL-72B (Table 1, “ALL”).</em></p>
+<p align="center">
+<em>
+Table: ASR (%) on MMSafetyBench-tiny aggregated over all categories.
+</em>
+</p>
 
 
 ### 📋 Attack Success Rate on SafeBench-tiny
@@ -87,7 +93,7 @@
 
 </div>
 
-<p align="center"><em>Table: ASR (%) on SafeBench-tiny across representative MLLMs (Table 2).</em></p>
+<p align="center"><em>Table: ASR (%) on SafeBench-tiny across representative MLLMs.</em></p>
 
 
 <!-- ## 🔧 Usage
@@ -128,7 +134,7 @@ python generate_model_response.py \
   If not set or alternative versions are missing, only the base `.json` file will be used. -->
 
 
-## 3. Evaluation
+## 🔧 Evaluation
 
 We follow the evaluation protocol described in the paper.
 
